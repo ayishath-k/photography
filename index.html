@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml"
+        href="https://img.freepik.com/premium-vector/square-business-logo-template_302761-68.jpg" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>photography</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- taiwind css -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            font-family: "EB Garamond", serif;
+        }
+
+        .bg-animation {
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            animation: bgChange 12s infinite;
+
+        }
+
+        @keyframes bgChange {
+            0% {
+                background-image: url("https://i.pinimg.com/originals/8f/7e/b6/8f7eb6b96970bd81a49d45ad1f2d214a.jpg");
+
+            }
+
+            25% {
+                background-image: url("https://vastphotos.com/files/uploads/photos/10150/high-resolution-nature-landscape-vast-xl.jpg");
+            }
+
+            50% {
+                background-image: url("https://images8.alphacoders.com/392/392122.jpg");
+            }
+
+            75% {
+                background-image: url("https://images.squarespace-cdn.com/content/v1/54379dc9e4b02667fff75285/1468337599213-116692CO9NUV2EWXVKSF/ke17ZwdGBToddI8pDm48kOggE0Ch6pMGalwtLMqzsSB7gQa3H78H3Y0txjaiv_0f8dQJ5B5_UOmfycDWklNyB6iE0rIMtwpjd99bzpx8zcKRkc8WWEWt0LGCNbwWndZjOqpeNLcJ80NK65_fV7S1UVrF8VqEfJs6iipY7hRf4kESJ1T9skH4hjtD-N_fkNyP_LIDCWDx8RE_7y4dVH9U2g/Clinique-3-step-beauty-cosmetics-product-photography-commercial-photographer-london-still-life.jpg");
+            }
+
+            100% {
+                background-image: url("https://i.pinimg.com/originals/8f/7e/b6/8f7eb6b96970bd81a49d45ad1f2d214a.jpg");
+            }
+        }
+
+       
+
+
+        @keyframes block {
+            0% {
+                opacity: 0;
+                transform: translateX(-200px);
+            }
+
+           
+
+        }
+
+        .anime {
+            animation: block;
+            transition: all;
+            animation-timeline: view();
+            animation-range: entry 0;
+        }
+        @keyframes fadeup {
+            0%{
+                opacity: 0;
+                transform: translateY(200px);
+            }
+        }
+
+        .image{
+            animation: fadeup;
+            transition: all;
+            animation-timeline: view();
+            animation-range: entry 0.1;
+        }
+        li:hover a{
+            background-color: rgb(92, 140, 170);
+            color: white;
+            padding: 10px 10px;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+  
+
+    <header class="bg-white text-dark">
+        <section class="wrapper h-[90px] flex justify-between items-center" id="Home">
+            <h1>
+                <img src="https://cdn.vectorstock.com/i/500p/11/43/crystal-abstract-icon-logo-vector-3631143.jpg" alt="logo" class="w-[91px]">
+            </h1>
+            <ul class="flex justify-center items-center font-semibold text-xl">
+                <li class="mr-10"> <a href="#Home">Home</a></li>
+                <li class="mr-10"><a href="#Service">Service</a></li>
+                <li class="mr-10"><a href="#Work">Work</a></li>
+                <li class="mr-10"><a href="#Contact">Contact</a></li>
+            </ul>
+
+        </section>
+
+    </header>
+
+
+
+
+    <section class=" h-[100vh]">
+        <div class="bg-animation "></div>
+
+        
+
+    </section>
+
+
+    <!-- SERVICE -->
+<section id="Service">
+    
+        <div class="w-100  bg-sky-100 pb-20">
+            <div class="flex justify-center items-center">
+                <h1 class="mt-10 text-4xl mb-10 md:text-5xl text-sky-950">OUR SERVICES</h1>
+    
+            </div>
+            <div class=" md:grid grid-cols-2 md:px-40 md:pt-10 px-8 gap-5 ">
+                <div class="anime shadow-inner hover:bg-indigo-200 p-6 rounded-lg ">
+                    <h1 class="mb-5 text-2xl hover:text-indigo-500 hover:cursor-pointer">Product Photography</h1>
+                    <p class="text-lg">From conventional product photography to innovative e-commerce visuals, we animate
+                        your products through advanced set styling and professional retouching.</p>
+                    <!-- <div class="flex justify-end text-outline">01</div> -->
+                </div>
+                <div class="anime shadow-inner hover:bg-indigo-200 p-6 rounded-lg">
+                    <h1 class="mb-5 text-2xl hover:text-indigo-500 hover:cursor-pointer">Food Photography</h1>
+                    <p class="text-lg">Delight your audience's senses with our captivating food and beverage photography.
+                        Whether you're presenting culinary masterpieces for a menu, cookbook, or social media platform, our
+                        skilled team excels at making food appear utterly irresistible.</p>
+                </div>
+                <div class="anime shadow-inner hover:bg-indigo-200 p-6 rounded-lg">
+                    <h1 class="mb-5 text-2xl hover:text-indigo-500 hover:cursor-pointer">Model Photography</h1>
+                    <p class="text-lg">Our model photography services encapsulate the essence of beauty, meticulously
+                        crafted to highlight your products with a human touch. From selecting models to coordinating with
+                        hair and makeup artists, we guarantee perfection in every detail.</p>
+                </div>
+                <div class="anime shadow-inner hover:bg-indigo-200 p-6 rounded-lg">
+                    <h1 class="mb-5 text-2xl hover:text-indigo-500 hover:cursor-pointer">Videography and Stop Motion</h1>
+                    <p class="text-lg">From lighting to styling, we create captivating videos and stop motions that
+                        highlight the beauty and functionality of your products.
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="md:grid gap-10 grid-cols-4 mt-20 p-5">
+                <div class="image"><img src="https://i.pinimg.com/originals/44/aa/b6/44aab63d8edc1e3fd6ddeb13c32f5ee5.png" alt=""></div>
+                <div class="image"><img src="https://th.bing.com/th/id/OIP.-UlU2nlSIO-LIP4uQs6dsAHaHa?rs=1&pid=ImgDetMain" alt=""></div>
+                <div class="image"><img src="https://th.bing.com/th/id/OIP.mD6vvESgma_VaT7pScrV3AHaHa?w=700&h=700&rs=1&pid=ImgDetMain" alt="" height=""></div>
+                <div class="image"><img src="https://i.pinimg.com/originals/98/b1/bc/98b1bcbf86f3558a2785eff8b0bc3a87.jpg" alt=""></div>
+                <div class="image"><img src="https://i.pinimg.com/originals/7b/61/f4/7b61f427ba60da60a9dd0105727c5020.jpg" alt=""></div>
+                <div class="image"><img src="https://cdn.pixabay.com/photo/2024/03/01/20/29/girl-8607169_640.png" alt=""></div>
+                <div class="image"><img src="https://www.all-about-photo.com/images/photographer/S/PHOT-trini-schultz-15.jpg" alt=""></div>
+                <div class="image"><img src="https://th.bing.com/th/id/OIP.ghnY-PPmLZkmYOHSqQLlCwHaHc?rs=1&pid=ImgDetMain" alt="">
+                </div>
+    
+            </div>
+</section>
+        
+        <!-- why choose us -->
+
+        <div class="flex justify-center items-center">
+            <h1 class="mt-10 text-4xl mb-10 md:text-5xl text-sky-950">WHY CHOOSE US</h1>
+        </div>
+
+        <div class=" md:grid grid-cols-2 md:px-40 md:pt-10 px-8 gap-5 ">
+            <div class="anime">
+                <h4 class="anime md:text-5xl text-3xl text-center">We’re PA Creative Studio</h4>
+                <p class="md:text-2xl text-xl pt-7">Based in New Delhi, India, we specialize in creative commercial
+                    photography and product styling, focusing on unique and playful concepts.</p>
+                <p class="anime md:text-2xl text-xl pt-7">In today's competitive digital landscape, captivating visuals
+                    are essential to capture your audience's attention. With consumers constantly bombarded with
+                    imagery, ads, and content, every brand has a story to tell. We make sure, yours is the one being
+                    heard!</p>
+                <p class="anime md:text-2xl text-xl pt-7">So, If you lack the props, creative styling skills, or simply
+                    the time, we bring our expertise to the table to make your visuals shine. Equipped with a studio
+                    brimming with props, top-notch gear, and diverse backdrops, we're prepared to transform your
+                    creative visions into reality.
+                </p>
+            </div>
+                <div class="relative" style="background-color: rgba(0, 0, 0, 0.763);">
+                    <img style="opacity: 0.5;" class="w-100"
+                        src="https://i.pinimg.com/originals/74/fb/eb/74fbeb69b19d7828cddecd7a31f361e2.jpg" alt="">
+<div class="absolute bottom-32 text-white">
+                        <h1 class="md:text-4xl text-center">If your pictures aren’t good enough, you’re not close enough</h1>
+    
+</div>                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work -->
+<section id="Work">
+    
+        <div class="w-100  bg-sky-100 pb-20">
+          <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+            <div class="flex justify-center items-center">
+              <h2 class="mt-10 text-4xl mb-10 md:text-5xl text-sky-950">MEET OUR WORKERS</h2>
+    
+            </div>
+            <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="">
+                  
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie</h3>
+                    <p class="text-sm font-semibold leading-6 text-indigo-600">DESTINATION PHOTOGRAPHER</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Travel more, worry less.</p>
+                  </div>
+                </div>
+              </li>
+    
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToonwNT4zbwCyq-k-qAzXexPn6URz3gT4BxQ&s" alt="">
+                  
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">James</h3>
+                    <p class="text-sm font-semibold leading-6 text-indigo-600">WEDDING PHOTOGRAPHER</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Click some precious moments.</p>
+                  </div>
+                </div>
+              </li>
+    
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=6vUtfKvHhNsK9kdNWb7EJlksBDhBBok1bNjNRULsAYs=" alt="">
+                  
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">William</h3>
+                    <p class="text-sm font-semibold leading-6 text-indigo-600">STREET PHOTOGRAPHER</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">City streets and urban rhythms</p>
+                  </div>
+                </div>
+              </li>
+    
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://thumbs.dreamstime.com/b/portrait-handsome-smiling-young-man-folded-arms-smiling-joyful-cheerful-men-crossed-hands-isolated-studio-shot-172869765.jpg" alt="">
+                  
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Augestin</h3>
+                    <p class="text-sm font-semibold leading-6 text-indigo-600">WILD LIFE PHOTOGRAPHER</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Embrace the wild beauty that nature offers
+                    </p>
+                  </div>
+                </div>
+              </li>
+    
+              
+            </ul>
+          </div>
+        </div>
+</section>
+    
+
+     <!--form-->
+<section id="Contact" class="w-100  bg-sky-100 pb-2">
+    <form>
+      <div class="flex justify-center items-center">
+        <h1 id="contact"  class="mt-10 text-4xl mb-10 md:text-5xl text-sky-950">CONTACT</h1>
+      </div>
+      
+  
+        <div>
+          <h2 class="text-base font-semibold leading-7 text-gray-900">Feel Free To Ask Us Anything</h2>
+          <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
+    
+          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-3">
+              <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+              <div class="mt-2">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+      
+              <div class="sm:col-span-3">
+                <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                <div class="mt-2">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-4">
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                <div class="mt-2">
+                  <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-3">
+                <label for="country" class="block text-sm font-medium leading-6 text-gray-900">State</label>
+                <div class="mt-2">
+                  <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                    <option>Kerala</option>
+                    <option>Tamilnadu</option>
+                    <option>Karnataka</option>
+                  </select>
+                </div>
+              </div>
+      
+              <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Street address</label>
+                <div class="mt-2">
+                  <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-2 sm:col-start-1">
+                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
+                <div class="mt-2">
+                  <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-2">
+                <label for="region" class="block text-sm font-medium leading-6 text-gray-900">State / Province</label>
+                <div class="mt-2">
+                  <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+      
+              <div class="sm:col-span-2">
+                <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
+                <div class="mt-2">
+                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 flex items-center justify-end gap-x-6">
+              <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+              <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ">Save</button>
+            </div>
+          </div>
+        
+      
+        
+      </form>
+</section>
+
+<!-- footer -->
+<footer class="relative bg-sky-950 pb-20 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-white">
+          we respond 1-2 business days.
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-white text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About Us</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Blog</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Github</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-white text-sm font-semibold mb-2">Other Resources</span>
+            <ul class="list-unstyled">
+              
+              <li>
+                <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#work">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#conact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-white font-semibold py-1">
+          Copyright © <span id="get-current-year">2024</span><a href="" class="text-white hover:text-gray-800" target="_blank"> Lorem
+          <a href="" class="text-white hover:text-blueGray-800">ipsum</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+      
+
+
+
+
+</body>
+
+</html>
+</body>
+</html>
